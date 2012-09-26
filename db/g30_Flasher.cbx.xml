@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="g30_Flasher">
+		<CBX_INST_ENTRY INSTANCE_NAME="|g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_cti.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,308 @@
+Simulator report for g30_Flasher
+Sun Oct 26 22:47:30 2008
+Quartus II Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 ms       ;
+; Simulation Netlist Size     ; 88 nodes     ;
+; Simulation Coverage         ;      71.17 % ;
+; Total Number of Transitions ; 874712       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                                     ; Setting          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+; Simulation mode                                                                            ; Timing           ; Timing        ;
+; Start time                                                                                 ; 0 ns             ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF             ;               ;
+; Vector input source                                                                        ; Test Flasher.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On               ; On            ;
+; Check outputs                                                                              ; Off              ; Off           ;
+; Report simulation coverage                                                                 ; On               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On               ; On            ;
+; Display missing 1-value coverage report                                                    ; On               ; On            ;
+; Display missing 0-value coverage report                                                    ; On               ; On            ;
+; Detect setup and hold time violations                                                      ; Off              ; Off           ;
+; Detect glitches                                                                            ; Off              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off              ; Off           ;
+; Generate Signal Activity File                                                              ; Off              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      71.17 % ;
+; Total nodes checked                                 ; 88           ;
+; Total output ports checked                          ; 111          ;
+; Total output ports with complete 1/0-value coverage ; 79           ;
+; Total output ports with no 1/0-value coverage       ; 32           ;
+; Total output ports with no 1-value coverage         ; 32           ;
+; Total output ports with no 0-value coverage         ; 32           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                          ; Output Port Name                                                                                                                      ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[13] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[13]               ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[3]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[3]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[0]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[0]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[1]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[1]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[10] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[10]               ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[12] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[12]               ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[4]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[4]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[2]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[2]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[11] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[11]               ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[8]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[8]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[6]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[6]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[7]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[7]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[5]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[5]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[9]  ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[9]                ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita0    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita0       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita0    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita0~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita1    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita1       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita1    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita1~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita2    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita2       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita2    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita2~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita3    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita3       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita3    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita3~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita4    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita4       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita4    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita4~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita5    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita5       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita5    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita5~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita6    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita6       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita6    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita6~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita7    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita7       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita7    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita7~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita8    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita8       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita8    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita8~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita9    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita9       ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita9    ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita9~COUT  ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita10   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita10      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita10   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita10~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita11   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita11      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita11   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita11~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita12   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita12      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita12   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita12~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita13   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita13      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita13   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita13~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita14   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita14      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita14   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita14~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita15   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita15      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita15   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita15~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita16   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita16      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita16   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita16~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita17   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita17      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita17   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita17~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita18   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita18      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita18   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita18~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita19   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita19      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita19   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita19~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita20   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita20      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita20   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita20~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita21   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita21      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita21   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita21~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita22   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita22      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita22   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita22~COUT ; cout             ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita23   ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_comb_bita23      ; sumout           ;
+; |g30_Flasher|g30_Flasher_Mux:F2|lpm_tff0:FM1|lpm_ff:lpm_ff_component|dffs[0]                                                       ; |g30_Flasher|g30_Flasher_Mux:F2|lpm_tff0:FM1|lpm_ff:lpm_ff_component|dffs[0]                                                          ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~138                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~138                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~139                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~139                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~140                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~140                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~141                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~141                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~142                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~142                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~143                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|Equal4~143                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|ORF~8                                                                                            ; |g30_Flasher|g30_Flasher_Timer:F1|ORF~8                                                                                               ; combout          ;
+; |g30_Flasher|g30_Flasher_Mux:F2|lpm_tff0:FM1|lpm_ff:lpm_ff_component|dffs[0]~4                                                     ; |g30_Flasher|g30_Flasher_Mux:F2|lpm_tff0:FM1|lpm_ff:lpm_ff_component|dffs[0]~4                                                        ; combout          ;
+; |g30_Flasher|MUXCODE1[1]                                                                                                           ; |g30_Flasher|MUXCODE1[1]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE1[2]                                                                                                           ; |g30_Flasher|MUXCODE1[2]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE1[3]                                                                                                           ; |g30_Flasher|MUXCODE1[3]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE2[0]                                                                                                           ; |g30_Flasher|MUXCODE2[0]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE2[2]                                                                                                           ; |g30_Flasher|MUXCODE2[2]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE2[3]                                                                                                           ; |g30_Flasher|MUXCODE2[3]                                                                                                              ; padio            ;
+; |g30_Flasher|MUXCODE2[4]                                                                                                           ; |g30_Flasher|MUXCODE2[4]                                                                                                              ; padio            ;
+; |g30_Flasher|clock                                                                                                                 ; |g30_Flasher|clock~corein                                                                                                             ; combout          ;
+; |g30_Flasher|clock~clkctrl                                                                                                         ; |g30_Flasher|clock~clkctrl                                                                                                            ; outclk           ;
++------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                          ; Output Port Name                                                                                                        ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[19] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[19] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[15] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[15] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[14] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[14] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[22] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[22] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[20] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[20] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[18] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[18] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[16] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[16] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[21] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[21] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[23] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[23] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[17] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[17] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal3~35                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal3~35                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[3]~99                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[3]~99                                                                            ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~45                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~45                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[10]~100                                                                                     ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[10]~100                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101                                                                                         ; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101                                                                              ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~46                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~46                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~47                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~47                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[5]~102                                                                                      ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[5]~102                                                                           ; combout          ;
+; |g30_Flasher|~GND                                                                                                                  ; |g30_Flasher|~GND                                                                                                       ; combout          ;
+; |g30_Flasher|fsel[0]~_wirecell                                                                                                     ; |g30_Flasher|fsel[0]~_wirecell                                                                                          ; combout          ;
+; |g30_Flasher|fsel[1]~_wirecell                                                                                                     ; |g30_Flasher|fsel[1]~_wirecell                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101_wirecell                                                                                ; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101_wirecell                                                                     ; combout          ;
+; |g30_Flasher|MUXCODE1[0]                                                                                                           ; |g30_Flasher|MUXCODE1[0]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[4]                                                                                                           ; |g30_Flasher|MUXCODE1[4]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[5]                                                                                                           ; |g30_Flasher|MUXCODE1[5]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[6]                                                                                                           ; |g30_Flasher|MUXCODE1[6]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[1]                                                                                                           ; |g30_Flasher|MUXCODE2[1]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[5]                                                                                                           ; |g30_Flasher|MUXCODE2[5]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[6]                                                                                                           ; |g30_Flasher|MUXCODE2[6]                                                                                                ; padio            ;
+; |g30_Flasher|fsel[0]                                                                                                               ; |g30_Flasher|fsel[0]~corein                                                                                             ; combout          ;
+; |g30_Flasher|fsel[1]                                                                                                               ; |g30_Flasher|fsel[1]~corein                                                                                             ; combout          ;
+; |g30_Flasher|reset                                                                                                                 ; |g30_Flasher|reset~corein                                                                                               ; combout          ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                          ; Output Port Name                                                                                                        ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[19] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[19] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[15] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[15] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[14] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[14] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[22] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[22] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[20] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[20] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[18] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[18] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[16] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[16] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[21] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[21] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[23] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[23] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|counter_reg_bit1a[17] ; |g30_Flasher|g30_Flasher_Timer:F1|lpm_counter0:FT1|lpm_counter:lpm_counter_component|cntr_cti:auto_generated|safe_q[17] ; regout           ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal3~35                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal3~35                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[3]~99                                                                                       ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[3]~99                                                                            ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~45                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~45                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[10]~100                                                                                     ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[10]~100                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101                                                                                         ; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101                                                                              ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~46                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~46                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~47                                                                                        ; |g30_Flasher|g30_Flasher_Timer:F1|Equal1~47                                                                             ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST[5]~102                                                                                      ; |g30_Flasher|g30_Flasher_Timer:F1|CNST[5]~102                                                                           ; combout          ;
+; |g30_Flasher|~GND                                                                                                                  ; |g30_Flasher|~GND                                                                                                       ; combout          ;
+; |g30_Flasher|fsel[0]~_wirecell                                                                                                     ; |g30_Flasher|fsel[0]~_wirecell                                                                                          ; combout          ;
+; |g30_Flasher|fsel[1]~_wirecell                                                                                                     ; |g30_Flasher|fsel[1]~_wirecell                                                                                          ; combout          ;
+; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101_wirecell                                                                                ; |g30_Flasher|g30_Flasher_Timer:F1|CNST~101_wirecell                                                                     ; combout          ;
+; |g30_Flasher|MUXCODE1[0]                                                                                                           ; |g30_Flasher|MUXCODE1[0]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[4]                                                                                                           ; |g30_Flasher|MUXCODE1[4]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[5]                                                                                                           ; |g30_Flasher|MUXCODE1[5]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE1[6]                                                                                                           ; |g30_Flasher|MUXCODE1[6]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[1]                                                                                                           ; |g30_Flasher|MUXCODE2[1]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[5]                                                                                                           ; |g30_Flasher|MUXCODE2[5]                                                                                                ; padio            ;
+; |g30_Flasher|MUXCODE2[6]                                                                                                           ; |g30_Flasher|MUXCODE2[6]                                                                                                ; padio            ;
+; |g30_Flasher|fsel[0]                                                                                                               ; |g30_Flasher|fsel[0]~corein                                                                                             ; combout          ;
+; |g30_Flasher|fsel[1]                                                                                                               ; |g30_Flasher|fsel[1]~corein                                                                                             ; combout          ;
+; |g30_Flasher|reset                                                                                                                 ; |g30_Flasher|reset~corein                                                                                               ; combout          ;
++------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Oct 26 22:47:18 2008
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off g30_Flasher -c g30_Flasher
+Info: Using vector source file "C:/Users/Christian/Desktop/DSD Lab 3 - Working/Test Flasher.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Test Flasher.vwf called g30_Flasher.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      71.17 %
+Info: Number of transitions in simulation is 874712
+Info: Vector file Test Flasher.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Sun Oct 26 22:47:30 2008
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
+
+
